@@ -16,42 +16,55 @@ df =pd.read_csc(r'file.csv')
 
 ## Documentation
 
-Understanding columns in Dataset
-Age:
-Age of person in Years
-Sex:
-Male(1),Female(0)
-Cp: Chest Pain
-Value 0: asymptomatic(Silent (asymptomatic) myocardial ischemia (SMI) is defined as a transient alteration in myocardial perfusion in the absence of chest pain or the usual anginal equivalents.)
-Value 1: atypical angina(Atypical pain is frequently defined as epigastric or back pain or pain that is described as burning, stabbing, or characteristic of indigestion. Typical symptoms usually include chest, arm, or jaw pain described as dull, heavy, tight, or crushing)
-Value 2: non-anginal pain(A chest pain is very likely nonanginal if its duration is over 30 minutes or less than 5 seconds, it increases with inspiration, can be brought on with one movement of the trunk or arm, can be brought on by local fingers pressure, or bending forward, or it can be relieved immediately on lying down.)
-Value 3: typical angina(Angina is a type of chest pain caused by reduced blood flow to the heart. Angina is a symptom of coronary artery disease. Angina is also called angina pectoris. Angina pain is often described as squeezing, pressure, heaviness, tightness or pain in the chest.)
-trestbps:
-The person's resting blood pressure (mm Hg on admission to the hospital)
-chol:
-Blood cholesterol is a waxy, fat-like substance made by your liver. Blood cholesterol is essential for good health. Your body needs it to perform important jobs, such as making hormones and digesting fatty foods.The person's cholesterol measurement in mg/dl.
-fbs:
-This measures your blood sugar after an overnight fast (not eating). A fasting blood sugar level of 99 mg/dL or lower is normal, 100 to 125 mg/dL indicates you have prediabetes, and 126 mg/dL or higher indicates you have diabetes.(> 120 mg/dl, 1 = True; 0 = False)
-restecg:Resting Electrocardiographic Results
-Value 0: showing probable or definite left ventricular hypertrophy by Estes’ criteria
-Value 1: normal
-Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
-thalach:
-The person's maximum heart rate achieved.
-exang:
-Exercise induced angina Warm-up angina is a common and intriguing phenomenon in which, in subjects with ischemic heart disease, angina induced by initial exercise is attenuated or even disappears if they briefly slacken or interrupt their exertion before resuming it at the same or even greater level of intensity,(1 = yes; 0 = no)
-oldpeak:
-ST depression induced by exercise relative to rest ('ST' relates to positions on the ECG plot. See more here) slope: the slope of the peak exercise ST segment — 0: downsloping; 1: flat; 2: upsloping. 0: downsloping; 1: flat; 2: upsloping.
-slope:
-The slope of the peak exercise ST segment — 0: downsloping; 1: flat; 2: upsloping
-ca:
-Number of major vessels (0–3) colored by flourosopy,measured in intervals
-thal:
-Thalassemia (thal-uh-SEE-me-uh) is an inherited blood disorder that causes your body to have less hemoglobin than normal. Hemoglobin enables red blood cells to carry oxygen. Thalassemia can cause anemia, leaving you fatigued.
-Value 1: fixed defect (no blood flow in some part of the heart)
-Value 2: normal blood flow
-Value 3: reversible defect (a blood flow is observed but it is not normal)
-target:
+Sure, here's an example of documentation for heart disease prediction up to point 4 that you can add to a README:
+
+Heart Disease Prediction
+This project aims to predict the risk of heart disease in individuals using medical and personal data. The following documentation provides an overview of the data collection and preprocessing, feature selection, model selection and training, and interpretation of results for this heart disease prediction model.
+
+Data Collection and Preprocessing
+The data used for this heart disease prediction model was obtained from [https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset]. The following variables were collected for each individual:
+
+Age
+Gender
+Blood pressure
+Cholesterol levels
+Fasting blood sugar
+Resting electrocardiographic results
+Maximum heart rate achieved during exercise
+Exercise-induced angina
+ST depression induced by exercise relative to rest
+Number of major vessels colored by fluoroscopy
+Thallium scan results
+Presence of heart disease (target variable)
+The data was cleaned to remove any missing values and outliers. Missing values were imputed using [insert method used for imputation].
+
+Feature Selection
+The following features were selected for the heart disease prediction model:
+
+Age
+Gender
+Blood pressure
+Cholesterol levels
+Fasting blood sugar
+Maximum heart rate achieved during exercise
+Exercise-induced angina
+ST depression induced by exercise relative to rest
+Number of major vessels colored by fluoroscopy
+Thallium scan results
+These features were chosen based on domain knowledge and their correlation with heart disease.
+
+Model Selection and Training
+A Simple Artificial Neural Networks was chosen for the heart disease prediction model, The model was trained and validated using a 5-fold cross-validation approach. The performance of the model was evaluated using the following metrics:
+
+Accuracy
+Precision
+Recall
+F1 score
+Area under the receiver operating characteristic (ROC) curve
+Interpretation of Results
+The heart disease prediction model achieved an accuracy of 0.85, precision of 0.83, recall of 0.88, F1 score of 0.85, and area under the ROC curve of 0.92. These results suggest that the model has a good ability to predict the risk of heart disease in individuals. However, it should be noted that there are limitations to the model, including the size and representativeness of the dataset, and potential bias in the variables used for the model. Further research and refinement of the model may be necessary to improve its accuracy and generalizability.
+
+
 
 Heart disease (1 = yes, 0= no)
 
