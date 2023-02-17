@@ -65,6 +65,9 @@ Value 1: fixed defect (no blood flow in some part of the heart)
 Value 2: normal blood flow
 Value 3: reversible defect (a blood flow is observed but it is not normal)
 target:
+
 Heart disease (1 = yes, 0= no)
 
+![image1](https://user-images.githubusercontent.com/109585845/219695341-2d188130-3e2c-43d4-a73b-d8a2ae0be929.png)
+![image2](https://user-images.githubusercontent.com/109585845/219695348-58c3c2b2-e569-401a-ab0d-fcb3c1db5f2c.png)
 
